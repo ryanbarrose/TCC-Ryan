@@ -1,29 +1,165 @@
 Armas leves
-Classic
-Shorty
-Frenzy
-Ghost
-Sheriff
+  Classic
+    Cabeça
+      0-30m-
+      30-50m-
+    Corpo
+      0-30m-
+      30-50m-
+    Pernas
+      0-30m-
+      30-50m-
+  Shorty
+    Cabeça
+      0-30m-
+      30-50m-
+    Corpo
+      0-30m-
+      30-50m-
+    Pernas
+      0-30m-
+      30-50m-
+  Frenzy
+    Cabeça
+      0-30m-
+      30-50m-
+    Corpo
+      0-30m-
+      30-50m-
+    Pernas
+      0-30m-
+      30-50m-
+  Ghost
+    Cabeça
+      0-30m-
+      30-50m-
+    Corpo
+      0-30m-
+      30-50m-
+    Pernas
+      0-30m-
+      30-50m-
+  Sheriff
+    Cabeça
+      0-30m-
+      30-50m-
+    Corpo
+      0-30m-
+      30-50m-
+    Pernas
+      0-30m-
+      30-50m-
 
-Submetralhadoras
-Stinger
-Spectre
+ Submetralhadoras
+    Cabeça
+      0-30m-
+      30-50m-
+    Corpo
+      0-30m-
+      30-50m-
+    Pernas
+      0-30m-
+      30-50m-
+  Stinger
+    Cabeça
+      0-30m-
+      30-50m-
+    Corpo
+      0-30m-
+      30-50m-
+    Pernas
+      0-30m-
+      30-50m-
+  Spectre
+    Cabeça
+      0-30m-
+      30-50m-
+    Corpo
+      0-30m-
+      30-50m-
+    Pernas
+      0-30m-
+      30-50m-
 
-Escopetas
-Bucky
-Judge
-Fuzis
-Bulldog
-Guardian
-Phantom
-Vandal
+ Escopetas
+    Cabeça
+      0-30m-
+      30-50m-
+    Corpo
+      0-30m-
+      30-50m-
+    Pernas
+      0-30m-
+      30-50m-
+  Bucky
+    Cabeça
+      0-30m-
+      30-50m-
+    Corpo
+      0-30m-
+      30-50m-
+    Pernas
+      0-30m-
+      30-50m-
+  Judge
+    Cabeça
+      0-30m-
+      30-50m-
+    Corpo
+      0-30m-
+      30-50m-
+    Pernas
+      0-30m-
+      30-50m-
+
+ Fuzis
+  Bulldog
+    Cabeça
+      0-30m-
+      30-50m-
+    Corpo
+      0-30m-
+      30-50m-
+    Pernas
+      0-30m-
+      30-50m-
+  Guardian
+    Cabeça
+      0-30m-
+      30-50m-
+    Corpo
+      0-30m-
+      30-50m-
+    Pernas
+      0-30m-
+      30-50m-
+  Phantom
+    Cabeça
+      0-30m-
+      30-50m-
+    Corpo
+      0-30m-
+      30-50m-
+    Pernas
+      0-30m-
+      30-50m-
+  Vandal
+    Cabeça
+      0-30m-
+      30-50m-
+    Corpo
+      0-30m-
+      30-50m-
+    Pernas
+      0-30m-
+      30-50m-
 
 Fuzis de Precisão
-Marshall
-Operator
+  Marshall
+  Operator
 
 Metralhadoras 
-Ares
-Odin
+  Ares
+  Odin
 Arma de confronto
-Faca/Confronto 
+  Faca/Confronto 
