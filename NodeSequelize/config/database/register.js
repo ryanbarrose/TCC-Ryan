@@ -1,11 +1,10 @@
-const database = require("../config/database/database")
+const Sequelize = require('sequelize')  
+const conn = require('./dabatabase')
 
-/*module.exports = {
-  up: (queryInterface, DataTypes) => {
-    return queryInterface.createTable('armas', {*/
-const armas = database.define('armas',{
-      id_armas: {
-        allowNull: false,
+
+const armasSchema = {
+    id_armas: {
+        allowNull: true,
         autoIncrement: true,
         primaryKey: true,
         unique:true,
@@ -13,112 +12,118 @@ const armas = database.define('armas',{
         type: DataTypes.INTEGER,
       },
       nome: {
-        allowNull: false,
+        allowNull: true,
         unsigned:true,
         type: DataTypes.STRING,
       },
       valor: {
-        allowNull: false,
+        allowNull: true,
         unsigned:true,
         type: DataTypes.STRING,
       },
       municao_total: {
-        allowNull: false,
+        allowNull: true,
         unsigned:true,
         type: DataTypes.STRING,
       },
       municao_pente: {
-        allowNull: false,
+        allowNull: true,
         unsigned:true,
         type: DataTypes.STRING,
       },
       sistema_funcionamento_pri: {
-        allowNull: false,
+        allowNull: true,
         unsigned:true,
         type: DataTypes.STRING,
       },
       sistema_funcionamento_sec: {
-        allowNull: true,
+        allowNull: false,
         unsigned:true,
         type: DataTypes.STRING,
       },
       rate: {
-        allowNull: false,
+        allowNull: true,
         unsigned:true,
         type: DataTypes.DECIMAL(10,2),
       },
       tiros_rajada: {
-        allowNull: true,
+        allowNull: false,
         unsigned:true,
         type: DataTypes.STRING,
       },
       penetracao: {
-        allowNull: false,
+        allowNull: true,
         unsigned:true,
         type: DataTypes.STRING,
       },
       dmax_cab: {
-        allowNull: false,
+        allowNull: true,
         unsigned:true,
         type: DataTypes.STRING,
       },
       dmed_cab: {
-        allowNull: true,
+        allowNull: false,
         unsigned:true,
         type: DataTypes.STRING,
       },
       dmin_cab: {
-        allowNull: true,
+        allowNull: false,
         unsigned:true,
         type: DataTypes.STRING,
       },
       dmax_cop: {
-        allowNull: false,
+        allowNull: true,
         unsigned:true,
         type: DataTypes.STRING,
       },
       dmed_cop: {
-        allowNull: true,
+        allowNull: false,
         unsigned:true,
         type: DataTypes.STRING,
       },
       dmin_cop: {
-        allowNull: true,
+        allowNull: false,
         unsigned:true,
         type: DataTypes.STRING,
       },
       dmax_per: {
-        allowNull: false,
+        allowNull: true,
         unsigned:true,
         type: DataTypes.STRING,
       },
       dmed_per: {
-        allowNull: true,
-        unsigned:true,
-        type: DataTypes.STRING,
-      },
-      dmin_per: {
-        allowNull: true,
-        unsigned:true,
-        type: DataTypes.STRING,
-      },
-      distmax_dmax: {
         allowNull: false,
         unsigned:true,
         type: DataTypes.STRING,
       },
-      distmax_dmed: {
+      dmin_per: {
+        allowNull: false,
+        unsigned:true,
+        type: DataTypes.STRING,
+      },
+      distmax_dmax: {
         allowNull: true,
+        unsigned:true,
+        type: DataTypes.STRING,
+      },
+      distmax_dmed: {
+        allowNull: false,
         unsigned:true,
         type: DataTypes.STRING,
       },
       distmax_dmin: {
-        allowNull: true,
+        allowNull: false,
         unsigned:true,
         type: DataTypes.STRING,
       },
-    });
+    };
 
-  down: (queryInterface) => {
-    return queryInterface.dropTable('armas');
-  }
+const armasTable = conn.define('users',armasSchema)
+
+armasTable.sync({force: false}).then(() =>{
+    console.log("Criei a tabela");
+}).catch((erro) =>{
+    console.log(erro);
+})
+
+module.exports = armasTable

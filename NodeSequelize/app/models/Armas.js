@@ -3,7 +3,7 @@ module.exports = (sequelize, DataTypes) => {
 
       nome: DataTypes.STRING,
 
-      valor: DataTypes.VARCHAR(45),
+      valor: DataTypes.STRING,
 
       municao_total: DataTypes.STRING,
 
@@ -46,3 +46,5 @@ module.exports = (sequelize, DataTypes) => {
   
     return Armas;
   }
+
+ 
