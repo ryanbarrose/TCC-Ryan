@@ -1,6 +1,8 @@
+const conn = require('./database')
 module.exports = (sequelize, DataTypes) => {
-    const Armas = sequelize.define('Armas', {
-
+  const ArmasSchema = {
+      id_armas:DataTypes.STRING,
+      
       nome: DataTypes.STRING,
 
       valor: DataTypes.STRING,
@@ -42,9 +44,17 @@ module.exports = (sequelize, DataTypes) => {
       distmax_dmed: DataTypes.STRING,
 
       distmax_dmin: DataTypes.STRING,
-    });
+    };
   
-    return Armas;
-  }
+  module.exports = ArmasTable
+  {
+    const ArmasTable = conn.define('Armas',ArmasSchema)
 
- 
+    ArmasTable.sync({force: false}).then(() =>{
+        console.log("Criei a tabela");
+    }).catch((erro) =>{
+        console.log(erro);
+        
+    })
+  }
+}
